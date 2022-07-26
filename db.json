@@ -1,12 +1,46 @@
 {
-  "physical": {
-      "title" : "physical Needs and Goals",
-      "description" : "Some daily To-dos",
-      "todos": ["Eat 2 balanced Diets Daily" , "Drink 8 glasses of water" , "Start your Day with stretching/ working out"] 
-  },
-  "career" : {
-      "title" : "Career Prosperity and Financial Freedom",
-      "description" : "Here are a few tips and tricks to earn you that extra buck and stay financially Secure",
-      "todos" : ["Avoid Viscious debt Cycles", "Use your tome and resources Wisely", "Learn more on wealth mindset through books, mentors etc"]
-  }
+  "todos": [
+    {
+      "task": "Drink 8 glasses of Water",
+      "category": "daily",
+      "isDone": false,
+      "id": 1
+    },
+    {
+      "task": "invest some shillings",
+      "category": "finances",
+      "isDone": false,
+      "id": 2
+    },
+    {
+      "task": "Read an informative article or book",
+      "category": "mind-care",
+      "isDone": false,
+      "id": 3
+    },
+    {
+      "task": "Check up on a friend",
+      "category": "people",
+      "isDone": false,
+      "id": 4
+    },
+    {
+      "task": "Morning Workout/stretch",
+      "category": "daily",
+      "isDone": false,
+      "id": 5
+    },
+    {
+      "task": "Rest at least 6 hrs a day",
+      "category": "mind-care",
+      "isDone": false,
+      "id": 6
+    },
+    {
+      "task": "Learn a new skill",
+      "category": "finances",
+      "isDone": false,
+      "id": 7
+    }
+  ]
 }

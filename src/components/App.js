@@ -1,14 +1,44 @@
+import React, {useState, useEffect} from "react";
+import AllTasks from "./AllTasks";
 import Home from "./Home";
 import NavBar from "./NavBar";
-import PhysicalHealth from "./PhysicalHealth";
+import "../App.css"
+// import PhysicalHealth from "./PhysicalHealth";
 
 
 function App (){
+
+  const [todos, setTodos] = useState([]);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    fetch("http://localhost:4000/todos")
+    .then(res => res.json())
+    .then(data => {
+      setTodos(data)
+      setIsLoaded(true)
+    })
+  },[])
+  
+  function handleUpdateItem(updatedItem) {
+    const updatedItems = todos.map((item) => {
+      if(item.id === updatedItem.id){
+        return updatedItem;
+      }
+      return item;
+    })
+    setTodos(updatedItems)
+  }
+
+  
+  console.log(todos)
   return (
-    <div className="App">
+    <div className="App ">
       <NavBar />
       <Home />
-      <PhysicalHealth />
+      {/* <PhysicalHealth /> */}
+      <AllTasks allTodos={todos} onUpdateItem={handleUpdateItem}  />
+      {/* {isLoaded ? <AllTasks allTodos={todos} /> : "Loading..."} */}
     </div>
   )
 }
