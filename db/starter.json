@@ -1,0 +1,12 @@
+{
+    "physical": {
+        "title" : "physical Needs and Goals",
+        "description" : "Some daily To-dos",
+        "todos": ["Eat 2 balanced Diets Daily" , "Drink 8 glasses of water" , "Start your Day with stretching/ working out"] 
+    },
+    "career" : {
+        "title" : "Career Prosperity and Financial Freedom",
+        "description" : "Here are a few tips and tricks to earn you that extra buck and stay financially Secure",
+        "todos" : ["Avoid Viscious debt Cycles", "Use your tome and resources Wisely", "Learn more on wealth mindset through books, mentors etc"]
+    }
+}
