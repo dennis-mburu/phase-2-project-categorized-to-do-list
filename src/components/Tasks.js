@@ -1,10 +1,10 @@
 import React from "react";
 
-function Tasks ({item, onUpdateItem}){
+function Tasks ({item,  onUpdateTask, onDeleteTask}){
     // console.log(item);
     const {task, category, isDone, id} = item
     function handleDoneStatus(){
-        fetch(`http://localhost:4000/todos/${item.id}`, {
+        fetch(`http://localhost:4000/todos/${id}`, {
             method: "PATCH",
             headers: {
               "Content-Type": "application/json",
@@ -14,7 +14,15 @@ function Tasks ({item, onUpdateItem}){
             }),
           })
             .then((r) => r.json())
-            .then((updatedItem) => onUpdateItem(updatedItem));
+            .then((updatedTask) =>  onUpdateTask(updatedTask));
+    }
+
+    function handleDeleteClick(){
+      fetch(`http://localhost:4000/todos/${id}`, {
+        method: "DELETE"
+      })
+      .then(res => res.json())
+      .then(() => onDeleteTask(id) )
     }
 
     return(
@@ -25,6 +33,7 @@ function Tasks ({item, onUpdateItem}){
             onClick={handleDoneStatus}>
                 {isDone ? "Mark as Undone" : "Mark as Done"}
             </button>
+            <button className="remove" onClick={handleDeleteClick}>Delete Task</button>
         </li>
     )
 }

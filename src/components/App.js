@@ -19,7 +19,7 @@ function App (){
     })
   },[])
   
-  function handleUpdateItem(updatedItem) {
+  function handleUpdateTask(updatedItem) {
     const updatedItems = todos.map((item) => {
       if(item.id === updatedItem.id){
         return updatedItem;
@@ -29,8 +29,18 @@ function App (){
     setTodos(updatedItems)
   }
 
+  function handleAddTask(newTask){
+    setTodos([...todos, newTask])
+  }
   
-  console.log(todos)
+  function handleDeletedTask(id){
+    const updatedItems = todos.filter(item => item.id !== id)
+    setTodos(updatedItems)
+    console.log(updatedItems)
+  }
+
+  
+  // console.log(todos)
   return (
     <div className="App ">
       <NavBar />
@@ -39,10 +49,12 @@ function App (){
           <Home />
         </Route>
         <Route exact path="/all-tasks">
-          <AllTasks allTodos={todos} onUpdateItem={handleUpdateItem}  />
+          <AllTasks allTodos={todos} 
+          onUpdateTask={handleUpdateTask}
+          onDeleteTask={handleDeletedTask}  />
         </Route>
         <Route exact path="/add-task">
-          <AddTaskForm />
+          <AddTaskForm onAddTask={handleAddTask}/>
         </Route>
       </Switch>
 
