@@ -8,11 +8,11 @@
   --background-light: rgb(230, 230, 230);
 }
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 body {
   background: rgb(231, 231, 231);
@@ -35,12 +35,12 @@ span[role="image"] {
   text-shadow: 0 0 0 black;
 }
 
-.App.dark {
+/* .App.dark {
   --font-color: rgb(255, 255, 255);
   --background: rgb(50, 50, 50);
   --background-light: rgb(101, 101, 101);
   transition: all 0.3s;
-}
+} */
 
 .App {
   margin: 2rem auto;
@@ -52,7 +52,7 @@ span[role="image"] {
   border-radius: 10px;
 }
 
-header {
+/* header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,11 +78,11 @@ header button {
   width: 45%;
   margin: 1rem 0;
   background: var(--cyan);
-}
+} */
 
-.Items {
+/* .Items {
   list-style: none;
-}
+} */
 
 .Items li {
   margin: 0.5rem 0;
@@ -135,4 +135,8 @@ header button {
   display: flex;
   flex-direction: column;
   flex: 1;
+}
+
+em{
+  color:  red;
 }

@@ -7,22 +7,10 @@
       "id": 1
     },
     {
-      "task": "invest some shillings",
-      "category": "finances",
-      "isDone": false,
-      "id": 2
-    },
-    {
       "task": "Read an informative article or book",
       "category": "mind-care",
       "isDone": false,
       "id": 3
-    },
-    {
-      "task": "Check up on a friend",
-      "category": "people",
-      "isDone": false,
-      "id": 4
     },
     {
       "task": "Morning Workout/stretch",
@@ -31,16 +19,34 @@
       "id": 5
     },
     {
-      "task": "Rest at least 6 hrs a day",
-      "category": "mind-care",
-      "isDone": false,
-      "id": 6
-    },
-    {
       "task": "Learn a new Money Making Skill",
       "category": "finances",
       "isDone": false,
       "id": 8
+    },
+    {
+      "task": "Take regular Breaks from work",
+      "category": "mind-care",
+      "isDone": false,
+      "id": 9
+    },
+    {
+      "task": "Plan a get-together with the Mburu's family in 2 weeks time",
+      "category": "people",
+      "isDone": false,
+      "id": 10
+    },
+    {
+      "task": "Invest 15k in CMMF by this end Month",
+      "category": "finances",
+      "isDone": false,
+      "id": 11
+    },
+    {
+      "task": "Call Jim tomorrow night",
+      "category": "people",
+      "isDone": false,
+      "id": 12
     }
   ]
 }

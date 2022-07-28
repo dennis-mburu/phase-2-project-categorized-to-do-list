@@ -1,8 +1,9 @@
 import React from "react";
 
 function Tasks ({item,  onUpdateTask, onDeleteTask}){
-    // console.log(item);
-    const {task, category, isDone, id} = item
+
+  const {task, category, isDone, id} = item
+  
     function handleDoneStatus(){
         fetch(`http://localhost:4000/todos/${id}`, {
             method: "PATCH",

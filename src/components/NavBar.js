@@ -65,7 +65,7 @@ function NavBar() {
           background: "darkblue",
         }}
       >
-        Mind-Care
+        Mind-Care & Self-Growth
       </NavLink>
 
       <NavLink

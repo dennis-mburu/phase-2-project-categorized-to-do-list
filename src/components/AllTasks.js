@@ -1,10 +1,10 @@
 import Tasks from "./Tasks";
 
 function AllTasks({allTodos,  onUpdateTask, onDeleteTask}){
-    // console.log(allTodos)
+
     return(
-        <div className="ShoppingList">
-            <p>All Tasks will be displayed Here</p>
+        <div className="Container">
+            <h3><em>ALL</em> Your Tasks, reminders, routines and goals will be displayed Here: </h3>
             <ul className="Items">{allTodos.map(item => <Tasks 
             key={item.id}
             onUpdateTask={onUpdateTask}

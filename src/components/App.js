@@ -44,7 +44,6 @@ function App (){
   }
 
   
-  // console.log(todos)
   return (
     <div className="App ">
       <NavBar />
@@ -88,7 +87,7 @@ function App (){
           <SocialLife
           allTodos={todos}
           onUpdateTask={handleUpdateTask}
-          onDeleteTask={handleDeletedTask}           />
+          onDeleteTask={handleDeletedTask} />
         </Route>
 
       </Switch>
