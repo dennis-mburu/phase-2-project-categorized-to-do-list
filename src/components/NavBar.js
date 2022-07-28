@@ -23,6 +23,7 @@ function NavBar() {
       >
         Home
       </NavLink>
+
       <NavLink
         to="/all-tasks"
         exact
@@ -43,6 +44,28 @@ function NavBar() {
         }}
       >
         Daily Tasks
+      </NavLink>
+
+      <NavLink
+        to="/finances"
+        exact
+        style={linkStyles}
+        activeStyle={{
+          background: "darkblue",
+        }}
+      >
+        Work & Finances
+      </NavLink>
+
+      <NavLink
+        to="/mind-care"
+        exact
+        style={linkStyles}
+        activeStyle={{
+          background: "darkblue",
+        }}
+      >
+        Mind-Care
       </NavLink>
 
       <NavLink

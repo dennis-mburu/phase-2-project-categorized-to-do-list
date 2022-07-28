@@ -6,6 +6,8 @@ import "../App.css"
 import { Route, Switch } from "react-router-dom";
 import AddTaskForm from "./AddTaskForm";
 import Daily from "./Daily";
+import Finances from "./Finances";
+import MindCare from "./MindCare";
 
 
 function App (){
@@ -49,19 +51,36 @@ function App (){
         <Route exact path="/">
           <Home />
         </Route>
+
         <Route exact path="/all-tasks">
           <AllTasks allTodos={todos} 
           onUpdateTask={handleUpdateTask}
           onDeleteTask={handleDeletedTask}  />
         </Route>
+
         <Route exact path="/add-task">
           <AddTaskForm onAddTask={handleAddTask}/>
         </Route>
-        <Route>
-          <Daily exact path="/daily"
+
+        <Route exact path="/daily">
+          <Daily 
           allTodos={todos}
           onUpdateTask={handleUpdateTask}
           onDeleteTask={handleDeletedTask} />
+        </Route>
+
+        <Route exact path="/finances">
+          <Finances 
+          allTodos={todos}
+          onUpdateTask={handleUpdateTask}
+          onDeleteTask={handleDeletedTask} />
+        </Route>
+
+        <Route exact path="/mind-care">
+          <MindCare 
+          allTodos={todos}
+          onUpdateTask={handleUpdateTask}
+          onDeleteTask={handleDeletedTask}            />
         </Route>
       </Switch>
 

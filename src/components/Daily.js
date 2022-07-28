@@ -4,7 +4,7 @@ import Tasks from "./Tasks";
 function Daily({allTodos, onUpdateTask, onDeleteTask}){
     // console.log(todos)
     const dailyTodos = allTodos.filter(item => item.category === "daily")
-    console.log(dailyTodos)
+    // console.log(dailyTodos)
 
     return (
         <div className="ShoppingList">
