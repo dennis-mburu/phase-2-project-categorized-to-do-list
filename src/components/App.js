@@ -16,7 +16,10 @@ function App (){
   const [todos, setTodos] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:4000/todos")
+    
+    // fetch("http://localhost:4000/todos")
+    
+    fetch("https://ancient-depths-93551.herokuapp.com/todos")
     .then(res => res.json())
     .then(data => {
       setTodos(data)

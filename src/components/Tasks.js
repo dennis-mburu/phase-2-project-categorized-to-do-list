@@ -5,7 +5,8 @@ function Tasks ({item,  onUpdateTask, onDeleteTask}){
   const {task, category, isDone, id} = item
 
     function handleDoneStatus(){
-        fetch(`http://localhost:4000/todos/${id}`, {
+        // fetch(`http://localhost:4000/todos/${id}`, {
+        fetch(`https://ancient-depths-93551.herokuapp.com/todos/${id}`, {
             method: "PATCH",
             headers: {
               "Content-Type": "application/json",
@@ -19,7 +20,9 @@ function Tasks ({item,  onUpdateTask, onDeleteTask}){
     }
 
     function handleDeleteClick(){
-      fetch(`http://localhost:4000/todos/${id}`, {
+      // fetch(`http://localhost:4000/todos/${id}`, {
+
+      fetch(`https://ancient-depths-93551.herokuapp.com/todos/${id}`, {
         method: "DELETE"
       })
       .then(res => res.json())
