@@ -8,17 +8,18 @@ const linkStyles = {
   background: "blue",
   textDecoration: "none",
   color: "white",
+  borderRadius: "15px", 
 };
 
 function NavBar() {
   return (
-    <div>
+    <div className="Navbar">
       <NavLink
         to="/"
         exact
         style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "black",
         }}
       >
         Home
@@ -29,7 +30,7 @@ function NavBar() {
         exact
         style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "black",
         }}
       >
         All Tasks
@@ -40,7 +41,7 @@ function NavBar() {
         exact
         style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "black",
         }}
       >
         Daily Tasks
@@ -51,7 +52,7 @@ function NavBar() {
         exact
         style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "black",
         }}
       >
         Work & Finances
@@ -62,7 +63,7 @@ function NavBar() {
         exact
         style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "black",
         }}
       >
         Mind-Care & Self-Growth
@@ -73,7 +74,7 @@ function NavBar() {
         exact
         style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "black",
         }}
       >
         Social Life
@@ -84,10 +85,10 @@ function NavBar() {
         exact
         style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+        background: "black",
         }}
       >
-        Add New Task
+        <em><strong>Add New Task</strong></em>
       </NavLink>
     </div>
   );

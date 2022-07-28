@@ -3,7 +3,7 @@ import React from "react";
 function Tasks ({item,  onUpdateTask, onDeleteTask}){
 
   const {task, category, isDone, id} = item
-  
+
     function handleDoneStatus(){
         fetch(`http://localhost:4000/todos/${id}`, {
             method: "PATCH",
@@ -27,7 +27,7 @@ function Tasks ({item,  onUpdateTask, onDeleteTask}){
     }
 
     return(
-        <li className={isDone ? "in-cart" : ""}>
+        <li className={isDone ? "isDone" : ""}>
             <span>{task}</span>
             <span className="category">{category}</span>
             <button className={isDone  ? "remove" : "add"}
