@@ -1,25 +1,16 @@
 :root {
   --magenta: rgb(210, 51, 210);
   --red: red;
-
   --cyan: rgb(98, 230, 230);
   --yellow: rgb(237, 237, 32);
   --font-color: rgb(33, 33, 33);
   --font-color-light: rgb(155, 155, 155);
-  /* --background: rgb(255, 255, 255); */
   --background: aqua; 
-    --background-light: rgb(230, 230, 230);
+  --background-light: rgb(230, 230, 230);
 }
-
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
 
 body {
   background: rgb(231, 231, 231);
-  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
   font-family: 'Courier New', Courier, monospace;
   font-size: 18px;
 }
@@ -39,12 +30,6 @@ span[role="image"] {
   text-shadow: 0 0 0 black;
 }
 
-/* .App.dark {
-  --font-color: rgb(255, 255, 255);
-  --background: rgb(50, 50, 50);
-  --background-light: rgb(101, 101, 101);
-  transition: all 0.3s;
-} */
 
 .App {
   margin: 2rem auto;
@@ -79,7 +64,6 @@ span[role="image"] {
 }
 
 .Items button.add {
-  /* background-color: var(--yellow); */
   background-color: green;
 
 }
@@ -131,6 +115,3 @@ h1, h2{
   color: brown;
 }
 
-.NavLink{
-  background-color: gray;
-}
