@@ -8,7 +8,7 @@ function MindCare ({allTodos, onUpdateTask, onDeleteTask}){
 
     return (
         <div className="ShoppingList">
-            <p>Mind-care, Recreational Tasks Come Here</p>
+            <p>Mind-care, Self Growth and Development Tasks Come Here</p>
             <ul className="Items">{mindTasks.map(item => <Tasks 
             key={item.id}
             onUpdateTask={onUpdateTask}

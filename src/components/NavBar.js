@@ -69,6 +69,17 @@ function NavBar() {
       </NavLink>
 
       <NavLink
+        to="/social-life"
+        exact
+        style={linkStyles}
+        activeStyle={{
+          background: "darkblue",
+        }}
+      >
+        Social Life
+      </NavLink>
+
+      <NavLink
         to="/add-task"
         exact
         style={linkStyles}

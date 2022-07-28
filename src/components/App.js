@@ -8,6 +8,7 @@ import AddTaskForm from "./AddTaskForm";
 import Daily from "./Daily";
 import Finances from "./Finances";
 import MindCare from "./MindCare";
+import SocialLife from "./SocialLife";
 
 
 function App (){
@@ -80,8 +81,16 @@ function App (){
           <MindCare 
           allTodos={todos}
           onUpdateTask={handleUpdateTask}
-          onDeleteTask={handleDeletedTask}            />
+          onDeleteTask={handleDeletedTask} />
         </Route>
+
+        <Route exact path="/social-life">
+          <SocialLife
+          allTodos={todos}
+          onUpdateTask={handleUpdateTask}
+          onDeleteTask={handleDeletedTask}           />
+        </Route>
+
       </Switch>
 
     </div>
