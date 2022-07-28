@@ -5,6 +5,7 @@ import NavBar from "./NavBar";
 import "../App.css"
 import { Route, Switch } from "react-router-dom";
 import AddTaskForm from "./AddTaskForm";
+import Daily from "./Daily";
 
 
 function App (){
@@ -55,6 +56,12 @@ function App (){
         </Route>
         <Route exact path="/add-task">
           <AddTaskForm onAddTask={handleAddTask}/>
+        </Route>
+        <Route>
+          <Daily exact path="/daily"
+          allTodos={todos}
+          onUpdateTask={handleUpdateTask}
+          onDeleteTask={handleDeletedTask} />
         </Route>
       </Switch>
 

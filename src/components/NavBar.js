@@ -33,6 +33,18 @@ function NavBar() {
       >
         All Tasks
       </NavLink>
+
+      <NavLink
+        to="/daily"
+        exact
+        style={linkStyles}
+        activeStyle={{
+          background: "darkblue",
+        }}
+      >
+        Daily Tasks
+      </NavLink>
+
       <NavLink
         to="/add-task"
         exact
