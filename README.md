@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Phase-2-Project--Categorized-To-Do-List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created using create-react-app.
+For more documentation on getting started with create-react-app, see the attached [CREATE-REACT-APP.md](./CREATE-REACT-APP.md)
 
-## Available Scripts
+## Author
+This Project was Created and Edited by **Dennis Mburu Mwaura**.
 
-In the project directory, you can run:
+## Project Description
+This project is on creating a categorized to do List, which will guide a user into properly classifying their tasks and Goals so as to boost effeiciency and productivity.
 
-### `npm start`
+It is a beginner level React project, whose main aim is to incorporate the most basic building blocks of any react project i.e components, props, state management, client side routing and internal APIs so as to come up with a React Single Page Application from scratch.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Setup Instructions and Live Links.
+This Project was created in **development mode** and later on built and published to **production mode**. More information on working around the 2 different modes can be found on the [CREATE-REACT-APP.md](./CREATE-REACT-APP.md). In order for the project to work universally, 2 separate repositories were made, one for the back end (to host our locally created Back end for universal accessibility) and the other for the front end. The back-end is hosted on Heroku, and you can view the raw JSON file at  https://ancient-depths-93551.herokuapp.com/todos
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The fully working React Applicatiion is hosted on Netlify at https://categorized-to-do-list.netlify.app/
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## CopyRight & License Information
+This is an Open Source Project with an MIT license. For more Information on the license terms and condition, see the attached [LICENSE](./LICENSE)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## More Information
+Feel free to check out my [blog](https://medium.com/@dennismburu2063/an-introduction-to-react-205e8f8f085c) for further information relating to this project.
